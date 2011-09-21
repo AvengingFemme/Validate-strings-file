@@ -5,7 +5,7 @@ open(STRINGS_FILE, $ARGV[0]);
 $linenum = 1;
 $errorcount = 0;
 foreach $line (@lines) {
-	if (!($line =~ m/\w*?\s*?=\s*?"[^"]*?"\;/ || $line =~ m/^\/\/.*$/ || $line =~ m/^\s*$/)) {
+	if (!($line =~ m/\w*?\s*?=\s*?"[^"]*?"\;/ || $line =~ m/^\s*?\/\/.*$/ || $line =~ m/^\s*$/)) {
 		print "$linenum: $line";
 		$errorcount++;
 	}
