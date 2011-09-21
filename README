@@ -1,0 +1,1 @@
+Validates a single text file for Cocoa strings file formatting. Pass the filename in as the only command line parameter. Prints the line number and line of all lines that don't conform to the strings format.
